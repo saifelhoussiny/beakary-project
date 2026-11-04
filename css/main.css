@@ -1,0 +1,733 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --paragraph-color: #686868;
+    --title-color: #303030;
+    --sections-color: #F8F8F8;
+    --golden-color: #ae9768;
+    --body-font: 'Alegreya-R','Alegreya Sans-R';
+    --algreya-font: 'Alegreya-R';
+    --algreya-sans-font: 'Alegreya Sans-R';
+;
+
+}
+@font-face {
+    font-family: 'Alegreya-R';
+    src: url('../webfonts/Alegreya-Regular.woff2') format('woff2'),
+        url('../webfonts/Alegreya-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alegreya Sans-BLack';
+    src: url('../webfonts/AlegreyaSans-Black.woff2') format('woff2'),
+        url('../webfonts/AlegreyaSans-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alegreya Sans-Bold';
+    src: url('../webfonts/AlegreyaSans-Bold.woff2') format('woff2'),
+        url('../webfonts/AlegreyaSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alegreya Sans-EB';
+    src: url('../webfonts/AlegreyaSans-ExtraBold.woff2') format('woff2'),
+        url('../webfonts/AlegreyaSans-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alegreya Sans-M';
+    src: url('../webfonts/AlegreyaSans-Medium.woff2') format('woff2'),
+        url('../webfonts/AlegreyaSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alegreya Sans-L';
+    src: url('../webfonts/AlegreyaSans-Light.woff2') format('woff2'),
+        url('../webfonts/AlegreyaSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alegreya Sans-TH';
+    src: url('../webfonts/AlegreyaSans-Thin.woff2') format('woff2'),
+        url('../webfonts/AlegreyaSans-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alegreya Sans-R';
+    src: url('../webfonts/AlegreyaSans-Regular.woff2') format('woff2'),
+        url('../webfonts/AlegreyaSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+body {
+    padding: 0%;
+    font-family:var(--body-font);
+    font-weight: 100;
+    font-style: normal;
+    margin: 0%;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    padding: 80px 0 70px 0;
+    display: flex;
+}
+
+.margin-auto {
+    margin: auto;
+}
+
+.overflow-auto {
+    overflow: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.navbar {
+    padding: 10px;
+    background-color: RGBA(0, 0, 0, 0);
+    position: relative;
+    right: 0;
+    left: 0;
+    top: 0;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar-logo img {
+    width: 200px;
+}
+
+.border {
+    padding: 10px 0;
+    border-bottom: 1px solid #dbdbdb;
+
+}
+
+.navbar-content li {
+    padding: 20px 10px;
+
+}
+
+.navbar-content a {
+    color: var(--title-color);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--algreya-sans-font);
+    transition: all 0.5s ease-in;
+
+}
+
+.navbar-content a:hover {
+    color: var(--golden-color);
+}
+
+.navbar-content ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.home {
+    background-image: url(../images/drew-coffman-1872.jpg);
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+    padding: 0%;
+    color: #f5f5f5;
+    background-position: center;
+}
+
+.home-text h1 {
+    background-color: transparent;
+    font-size: 68px;
+    font-weight: 200;
+    font-family:var(--algreya-sans-font);
+    margin: 15px;
+}
+
+.home-text h3,
+.home-text p {
+    font-size: 24px;
+    font-family: var(--algreya-sans-font);
+    font-weight: 400;
+    margin: 0 0 15px 0;
+
+}
+
+.buttonL {
+    padding: 15px 28px;
+    margin-right: 10px;
+    color: white;
+    background-color: var(--golden-color);
+    border: 2px solid var(--golden-color);
+    border-radius: 3px;
+    font-family: var(--algreya-sans-font);
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+.buttonL:hover,
+.buttonC:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid white;
+    border-radius: 3px;
+    font-family: var(--algreya-sans-font);
+    font-size: 16px;
+    font-weight: 700;
+    transition-duration: 0.5s;
+}
+
+.buttonC {
+    padding: 15px 28px;
+    margin-right: 10px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 3px;
+    font-family: var(--algreya-sans-font);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+.body-home {
+    background-color: transparent;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 240px;
+    padding: 20px;
+}
+
+.buttoms {
+    margin-top: 40px;
+}
+
+/* who we are */
+.who-we-are-img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.who-we-are-img img {
+    width: 100%;
+    display: block;
+
+}
+
+.who-we-are-caption {
+    width: 100%;
+    padding: 20px 15px 0 5rem;
+    vertical-align: middle;
+}
+
+.who-we-are-caption h2 {
+    margin: 0 0 25px 0;
+    color: var(--title-color);
+    line-height: 1.38em;
+    font-family:var(--algreya-sans-font);
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.who-we-are-caption p,
+.who-we-are-caption span {
+    margin: 0;
+    line-height: 1.86em;
+    color: var(--paragraph-color);
+    font-family: var(--algreya-sans-font);
+    font-size: 17px;
+    font-weight: 400;
+    padding-bottom: 8px;
+
+}
+
+.who-we-are-caption span {
+    vertical-align: middle;
+    padding-left: 1rem;
+}
+
+.who-we-are-caption ul li img {
+    border: 1px solid rgb(184, 184, 184);
+    border-radius: 50%;
+    width: 40px;
+    vertical-align: middle;
+
+}
+
+.who-we-are-caption ul li {
+    padding: 10px 0;
+    margin: 2px;
+    display: block;
+
+
+}
+
+.who-we-are-caption ul {
+    padding: 20px 0 0 0;
+    margin: 0%;
+}
+
+/*Our location section  */
+.location-conteaner {
+    background-color: var(--sections-color);
+    width: 100%;
+    padding: 50px 0;
+}
+
+.our-location-containear {
+    margin: 20px auto;
+    width: 80%;
+}
+
+.our-location-img {
+    width: 100%;
+    float: left;
+    padding: 20px;
+    border: 10px solid var(--sections-color);
+
+
+}
+
+.our-location-caption {
+    width: 100%;
+    float: left;
+    margin-top: 6%;
+    padding: 20px;
+    border: 10px solid var(--sections-color);
+}
+
+.our-location-caption h2 {
+    font-size: 32px;
+    color: var(--title-color);
+    line-height: 1.38em;
+    margin-bottom: 25px;
+    font-family: var(--algreya-font);
+    font-weight: 400;
+
+}
+
+.our-location-caption p {
+    line-height: 1.86em;
+    margin-bottom: 20px;
+    color: var(--paragraph-color);
+    font-size: 17px;
+    font-family: var(--algreya-sans-font);
+    font-weight: 400;
+}
+
+.our-location-img img {
+    width: 100%;
+    display: block;
+}
+
+
+/* our Baking section */
+.OurBaking-containear {
+    width: 80%;
+    padding: 50px 0 50px 0;
+}
+
+.OurBaking-containear p {
+    /* color: #888888; */
+    color: var(--paragraph-color);
+    font-size: 17px;
+    font-family:var(--algreya-sans-font);
+    font-weight: 400;
+}
+
+.OurBaking-containear h3 {
+    color: var(--title-color);
+    font-family: var(--algreya-font);
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.ourBaking-items {
+    padding: 20px;
+    border: 10px solid white;
+    width: 100%;
+}
+
+.ourBaking-items p {
+    color: var(--paragraph-color);
+    font-family:var(--algreya-sans-font);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.86em;
+}
+
+.ourBaking-items h4 {
+    color: var(--title-color);
+    font-family:var(--algreya-font);
+    font-size: 22px;
+    font-weight: 400;
+
+}
+
+.ourBaking-items img {
+    width: 100%;
+    display: block;
+}
+
+/*Contact Information  */
+
+.containear-contact {
+    padding: 85px 20px;
+    background-color: var(--sections-color);
+}
+
+
+.contact-content h2 {
+    color: var(--title-color);
+    font-family:var(--algreya-font);
+    font-weight: 400;
+}
+
+.contact-content p,
+.contact-content span {
+    font-size: 17px;
+    color: var(--paragraph-color);
+    font-weight: 400;
+    font-family:var(--algreya-sans-font);
+    line-height: 1.86em;
+}
+
+.contact-content ul li span {
+    padding-left: 14px;
+}
+
+.contact-content ul li img {
+    background-color: #8E7754;
+    border-radius: 50%;
+    width: 40px;
+    vertical-align: middle;
+}
+
+.contact-content ul li {
+    padding: 20px 0px;
+    margin: 2px;
+}
+
+.contact-img {
+    margin-top: 10%;
+}
+
+.contact-img img {
+    width: 100%;
+    display: block;
+
+}
+
+/* about us section */
+.about-us {
+    background-color: #403D38;
+    padding: 50px 16px;
+}
+
+.about-us h4 {
+    font-family:var(--algreya-font);
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+
+.about-us-1 p,
+.about-us-2 span,
+.about-us-4 a {
+    line-height: 1.89rem;
+    color: #969696;
+    font-size: 16px;
+    font-weight: 400;
+    font-family:var(--algreya-sans-font);
+}
+
+.about-us-2 {
+    line-height: 1.89rem;
+}
+
+.about-us-2 ul {
+    padding: 0;
+    margin: 0%;
+}
+
+.about-us-2 ul li:not(:first-child):not(:last-child) {
+    padding: 9px 0;
+    border-bottom: 1px solid rgba(150, 150, 150, 0.1);
+}
+
+.about-us-2 ul li {
+    display: flex;
+    align-items: center;
+}
+
+.about-us-2 ul li span {
+    margin-left: 5px;
+}
+
+.about-us-2 ul li img {
+    width: 25px;
+    display: block;
+}
+
+.about-us-4 ul li img {
+    width: 40px;
+}
+
+.about-us-4 {
+    background-image:
+        linear-gradient(rgba(64, 61, 56, 0.82),
+            rgba(64, 61, 56, 0.82)),
+        url(../images/contact-details-map.png);
+
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center 130px;
+}
+
+/* footer section */
+.footer {
+    background-color: #353330;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.containear-footer {
+    padding-right: .9375rem;
+    padding-left: .9375rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.footer-logo img {
+    width: 100%;
+}
+
+.footer-logo {
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+
+.content {
+    color: #888888;
+    font-family: 'Alegreya Sans';
+    font-style: normal;
+    font-weight: 400;
+
+}
+
+.icones {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 1 100%;
+    column-gap: 10px;
+}
+
+.icones img {
+    width: 40px;
+    border-radius: 50%;
+    background-color: #484540;
+}
+
+.face-icon a img:hover {
+    background-color: #3B5998;
+}
+
+.gemail-icon a img:hover {
+    background-color: #DD4B39;
+}
+
+.linkedin-icon a img:hover {
+    background-color: #007BB5;
+}
+
+.twitter-icon a img:hover {
+    background-color: #00ACED;
+}
+
+/* true or false */
+
+/* small screen */
+@media screen and (min-width:640px) {
+    .about-us {
+        padding: 50px 50px;
+    }
+}
+
+/* medium screen */
+@media screen and (min-width:768px) {
+
+    /* navbar */
+    .navbar {
+        padding: 8px 9% 8px 11%;
+        display: flex;
+        justify-content: space-between;
+        background-color: RGBA(0, 0, 0, 0);
+        position: fixed;
+        right: 0;
+        left: 0;
+        top: 0;
+        align-items: center;
+        z-index: 999;
+    }
+
+    .navbar-content a {
+        position: relative;
+        color: var(--sections-color);
+        font-size: 18px;
+        text-decoration: none;
+    }
+
+    .navbar-content a::before {
+        content: "";
+        position: absolute;
+        top: -33px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background-color: var(--golden-color);
+        transition: width 1s ease;
+    }
+
+    .navbar-content a:hover::before {
+        width: 100%;
+    }
+
+
+    .navbar-logo img {
+        width: 180px;
+        display: block;
+    }
+
+    .border {
+        border-bottom: none;
+    }
+
+
+    .navbar-content ul {
+        display: flex;
+        column-gap: 20px;
+    }
+
+    /*Contact Information  */
+
+    .containear-contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        padding: 85px 30px;
+
+    }
+
+    .contact-content,
+    .contact-img {
+        flex-basis: 40%;
+
+    }
+
+    .contact-img {
+        margin-top: 0%;
+        margin-left: 3%;
+    }
+
+    .contact-content {
+        margin-right: 3%;
+
+    }
+
+    /* about us section */
+
+    .about-us-1,
+    .about-us-22,
+    .about-us-3,
+    .about-us-4 {
+        float: left;
+    }
+
+    /* footer */
+
+}
+
+/* large screen */
+@media screen and (min-width:1024px) {
+
+    .about-us {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        padding: 30px 160px 75px 180px;
+        column-gap: 20px;
+    }
+
+    .about-us-2 ul li {
+        padding: 4px 0;
+        margin: 0 6px;
+    }
+
+}
+
+/* xx-large screen */
+@media screen and (min-width:1536px) {}
